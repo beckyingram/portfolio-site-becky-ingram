@@ -11,7 +11,7 @@ body {
     line-height: 1.6; 
     color: 000000;
 }
-
+/* Headings */
 h1, h2, h3, h4 {
     line-height: 1.4;
   }
@@ -33,7 +33,37 @@ h1, h2, h3, h4 {
     font-size: 1.50em;
     font-weight: 400;
   }
-
+/* images */
   img {
     width: 100%;
+  }
+/* links */
+  a {
+    color: #1b4d3e;
+    text-decoration: none; /* No underlining */
+  }
+  a:visited { /* visited link */
+    color: #9d11ed;
+  }
+  a:hover {
+    color: #0ceb2a;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  a:active { /* selected link */
+    color: aqua;
+  }
+  a:hover,
+    a:focus {
+        color: #cc6540;
+        text-decoration: underline;
+}
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #1b4d3e;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    transition: 0.2s opacity;
   }
