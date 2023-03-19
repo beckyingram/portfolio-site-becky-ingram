@@ -61,9 +61,25 @@ h1, h2, h3, h4 {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #1b4d3e;
     color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
+    font-weight: 600;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #994c30; /* width of the border, type, color */
     transition: 0.2s opacity;
+  }
+  .button:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+
+.button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+  }
+
+.button.contact:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
   }
