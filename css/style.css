@@ -55,21 +55,21 @@ a {
 }
 
 a:visited { /* visited link */
-  color: #9d11ed;
+  color: #736372;
 }
 
 a:hover {
-  color: #0ceb2a;
+  color: #95d9c3;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
-  color: aqua;
+  color: #a7fff6;
 }
 
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #95d9c3;
   text-decoration: underline;
 }
 
@@ -80,7 +80,7 @@ a:focus {
   font-weight: 600;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #1b4d3e; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -91,12 +91,24 @@ a:focus {
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #1b4d3e;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #1b4d3e;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: #1b4d3e;
+  color: #fff;
+}
+
+.button.downloadcv {
+  background-color: transparent;
+  color: #1b4d3e;
+  text-transform: uppercase;
+  border: 2px solid #1b4d3e;
+}
+
+.button.downloadcv:hover {
+  background-color: #1b4d3e;
   color: #fff;
 }
