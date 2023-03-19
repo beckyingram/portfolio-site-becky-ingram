@@ -10,7 +10,7 @@ Primary Color (Brunswick Green): #1b4d3e
 body {
   background-color: ffffff;
   font-family: 'Work Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   color: 000000;
@@ -77,6 +77,8 @@ a:focus {
   text-decoration: underline;
 }
 
+/* buttons */
+
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #1b4d3e;
@@ -137,9 +139,6 @@ a:focus {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-}
-
-#hero h1 {
   text-align: center;
 }
 
@@ -155,9 +154,9 @@ header {
   background-color: #cbd6c2;
   text-align: center;
   padding: 10px 0;
-  box-shadow: 0px 5px 5px -1px rgba(27,77,62,0.61);
-  -webkit-box-shadow: 0px 5px 5px -1px rgba(27,77,62,0.61);
-  -moz-box-shadow: 0px 5px 5px -1px rgba(27,77,62,0.61);
+  box-shadow: 0px 5px 5px -1px rgba(27, 77, 62, 0.61);
+  -webkit-box-shadow: 0px 5px 5px -1px rgba(27, 77, 62, 0.61);
+  -moz-box-shadow: 0px 5px 5px -1px rgba(27, 77, 62, 0.61);
   position: fixed;
   width: 100%;
 }
@@ -180,4 +179,8 @@ nav > ul > li > a {
 
 main {
   padding-top: 103.19px;
+}
+
+#about h1 {
+  text-align: center;
 }
