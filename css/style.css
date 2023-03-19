@@ -3,6 +3,10 @@ Colors used:
 Primary Color (Brunswick Green): #1b4d3e
 */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: ffffff;
   font-family: 'Work Sans', sans-serif;
@@ -55,7 +59,7 @@ a {
 }
 
 a:visited { /* visited link */
-  color: #736372;
+  color: #71bda7;
 }
 
 a:hover {
@@ -111,4 +115,69 @@ a:focus {
 .button.downloadcv:hover {
   background-color: #1b4d3e;
   color: #fff;
+}
+
+/* layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #1b4d3e;
+}
+
+#hero {
+  background-color: #cbd6c2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+header {
+  background-color: #cbd6c2;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 5px 5px -1px rgba(27,77,62,0.61);
+  -webkit-box-shadow: 0px 5px 5px -1px rgba(27,77,62,0.61);
+  -moz-box-shadow: 0px 5px 5px -1px rgba(27,77,62,0.61);
+  position: fixed;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1b4d3e;
+}
+
+main {
+  padding-top: 103.19px;
 }
