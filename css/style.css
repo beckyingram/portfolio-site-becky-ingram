@@ -150,12 +150,6 @@ a:focus {
   margin: 25px 0;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 #work .row {
   padding-bottom: 25px;
   border-bottom: 3px solid #1b4d3e;
@@ -164,6 +158,12 @@ a:focus {
 #about .row {
   padding-bottom: 25px;
   border-bottom: 3px solid #1b4d3e;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #hero {
@@ -279,10 +279,11 @@ main {
     margin-top: 0;
   }
 
+  /* flex code below only works when col-lg-7 and col-lg-5 are removed from about page */
   .flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
