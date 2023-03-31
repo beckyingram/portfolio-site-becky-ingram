@@ -18,9 +18,9 @@ body {
 
 /* Headings */
 
-h1,
-h2,
-h3,
+h1, 
+h2, 
+h3, 
 h4 {
   line-height: 1.4;
 }
@@ -50,6 +50,13 @@ h4 {
 
 img {
   width: 100%;
+}
+
+.biophoto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 .berlin-illustration {
@@ -134,6 +141,9 @@ a:focus {
 
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -147,6 +157,11 @@ a:focus {
 }
 
 #work .row {
+  padding-bottom: 25px;
+  border-bottom: 3px solid #1b4d3e;
+}
+
+#about .row {
   padding-bottom: 25px;
   border-bottom: 3px solid #1b4d3e;
 }
@@ -200,13 +215,14 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 103.19px;
+  padding-top: 45px;
 }
 
 #about h1 {
   text-align: center;
 }
 
+/* Animations */
 @keyframes color-change {
   0% { fill: #edc655; }
   50% { fill: #fcffad; }
@@ -253,7 +269,6 @@ main {
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
   }
 
   .col-md-6 {
@@ -262,6 +277,12 @@ main {
 
   #about h3 {
     margin-top: 0;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -275,11 +296,11 @@ main {
     width: 40%;
   }
 
-  .col-lg-8 {
+  .col-lg-9 {
     width: 70%;
   }
 
-  .col-lg-2 {
+  .col-lg-3 {
     width: 30%;
   }
 }
@@ -287,14 +308,4 @@ main {
 [class*="col-"] {
   float: left;
   padding: 10px;
-}
-
-.col-lg-8 {
-  padding: 10px 50px 10px 10px;
-}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
 }
