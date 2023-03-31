@@ -146,18 +146,13 @@ a:focus {
   margin-right: auto;
 }
 
-.row {
-  margin: 25px 0;
-}
-
 #work .row {
   padding-bottom: 25px;
   border-bottom: 3px solid #1b4d3e;
 }
 
-#about .row {
-  padding-bottom: 25px;
-  border-bottom: 3px solid #1b4d3e;
+.row {
+  margin: 25px 0;
 }
 
 .row::after {
@@ -279,12 +274,13 @@ main {
     margin-top: 0;
   }
 
-  /* flex code below only works when col-lg-7 and col-lg-5 are removed from about page */
+  /* flex code below only works when col-lg-7 and col-lg-5 are removed from about page
   .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+  */
 }
 
 /* Large devices (1024px or larger) */
@@ -295,14 +291,6 @@ main {
 
   .col-lg-5 {
     width: 40%;
-  }
-
-  .col-lg-9 {
-    width: 70%;
-  }
-
-  .col-lg-3 {
-    width: 30%;
   }
 }
 
