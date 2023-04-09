@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary Color (Brunswick Green): #1b4d3e
+Primary Color:
 */
 
 * {
@@ -174,7 +174,7 @@ a:focus {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   text-transform: uppercase;
 }
 
@@ -255,7 +255,7 @@ main {
 }
 
 /* Medium devices (640px and larger) */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -276,6 +276,10 @@ main {
 
   #about h3 {
     margin-top: 0;
+  }
+
+  .logo {
+    min-width: 250px;
   }
 
   /* flex code below only works when col-lg-7 and col-lg-5 are removed from about page
