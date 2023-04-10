@@ -18,9 +18,9 @@ body {
 
 /* Headings */
 
-h1, 
-h2, 
-h3, 
+h1,
+h2,
+h3,
 h4 {
   line-height: 1.4;
 }
@@ -44,6 +44,10 @@ h3 {
 h4 {
   font-size: 1.5em;
   font-weight: 400;
+}
+
+#about h1 {
+  text-align: center;
 }
 
 /* images */
@@ -178,9 +182,12 @@ a:focus {
   text-transform: uppercase;
 }
 
+main {
+  padding-top: 45px;
+}
+
 header {
   background-color: #f0faf7;
-  text-align: center;
   padding: 10px 0;
   box-shadow: 0 5px 5px -1px #f0faf7;
   -webkit-box-shadow: 0 5px 5px -1px #f0faf7;
@@ -196,10 +203,7 @@ header {
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -209,12 +213,39 @@ nav > ul > li > a {
   color: #1b4d3e;
 }
 
-main {
-  padding-top: 45px;
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
 }
 
-#about h1 {
-  text-align: center;
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #1b4d3e;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 /* Animations */
@@ -280,6 +311,33 @@ main {
 
   .logo {
     min-width: 250px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    padding: 0;
+    margin: 0;
+    border-top: 0;
+  }
+
+  nav > ul {
+    margin: 0;
+    border-top: 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   /* flex code below only works when col-lg-7 and col-lg-5 are removed from about page
