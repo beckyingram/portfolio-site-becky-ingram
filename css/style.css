@@ -69,6 +69,13 @@ img {
   height: auto;
 }
 
+.wireframephoto {
+  display: inline-block;
+  width: 20%;
+  height: 20%;
+  padding: 10px;
+}
+
 /* links */
 
 a {
